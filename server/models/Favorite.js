@@ -1,0 +1,1 @@
+import mongoose from 'mongoose';export default mongoose.model('Favorite',new mongoose.Schema({userId:{type:String,index:true},type:String,refId:String,title:String,payload:Object,createdAt:{type:Date,default:Date.now}}));
