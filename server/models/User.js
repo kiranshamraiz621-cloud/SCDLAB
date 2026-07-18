@@ -1,0 +1,1 @@
+import mongoose from 'mongoose';export default mongoose.model('User',new mongoose.Schema({firebaseUid:String,name:String,email:{type:String,index:true},role:{type:String,default:'user'},createdAt:{type:Date,default:Date.now}}));

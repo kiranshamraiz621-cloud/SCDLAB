@@ -1,0 +1,4 @@
+import {motion} from 'framer-motion';
+export const Glass=({children,className=''})=><motion.section whileHover={{y:-4}} className={`rounded-3xl border border-white/10 bg-white/[.06] p-6 shadow-glow backdrop-blur-xl ${className}`}>{children}</motion.section>;
+export const Hero=({title,eyebrow,children})=><section className="py-12 md:py-20"><p className="mb-4 text-sm font-bold uppercase tracking-[.45em] text-cyan-300">{eyebrow}</p><h1 className="max-w-5xl bg-gradient-to-r from-white via-cyan-200 to-violet-300 bg-clip-text text-5xl font-black leading-tight text-transparent md:text-7xl">{title}</h1><div className="mt-6 max-w-3xl text-lg text-slate-300">{children}</div></section>;
+export const Button=({children,...p})=><button {...p} className="rounded-full bg-gradient-to-r from-cyan-300 to-violet-400 px-6 py-3 font-bold text-black shadow-glow transition hover:scale-105">{children}</button>;
